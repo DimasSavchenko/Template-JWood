@@ -1,0 +1,330 @@
+@import url(fonts.css);
+
+body {
+	min-width: 400px;
+	font-family: 'Nexa_Free_Light', 'Nexa_Free_Bold' ,'OpenSans', 'FeltTipWoman';
+}
+
+/*STYLES AND FONTS*/
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.color__white {
+	color: #ffffff;
+}
+
+.color__black {
+	color: #202020;
+}
+
+.color__grey {
+	color: #bebebe;
+}
+
+.txt__up {
+	text-transform: uppercase;
+}
+
+.font__bold {
+	font-family: 'Nexa_Free_Bold';
+}
+
+.font__open-sans {
+	font-family: 'OpenSans', sans-serif;
+}
+
+.font__felt {
+	font-family: 'FeltTipWoman';
+}
+
+.logo__text {
+	font-size: 60px;
+}
+
+.scroll {
+	padding-bottom: 2%;
+}
+
+.scroll__text {
+	font-size: 18px;
+	margin-bottom: 5%;	
+}
+
+.first-section__title,
+.second-section__title {
+	font-size: 48px;
+}
+
+.scroll__text,
+.first-section__title,
+.second-section__title {
+	letter-spacing: 2px;
+}
+
+.first-section__author {
+	font-size: 18px;
+}
+
+/*HEADER*/
+.nav__container {
+	position: fixed;
+	width: 90%;
+	margin: 0 5%;
+	border-bottom: 1px solid #fff;
+}
+
+.nav {
+	padding: 3% 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__link {
+	margin-right: 3%;
+	font-size: 24px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+	background: #25453e;
+}
+
+/*END OF HEADER*/
+
+/*CONTAIN*/
+/*WELCOME*/
+.welcome__container {
+	background: url(../img/welcome-bg.jpg) no-repeat;
+	height: 100vh;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.welcome__logo {
+	position: relative;
+}
+
+.logo__img {
+	height: 40vh;		
+}
+
+.logo__tm {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 24px;
+}
+
+.welcome__scroll {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 0%;
+}
+
+.scroll:hover {
+	bottom: -0.5rem;
+}
+
+/*END OF WELCOME*/
+
+/*FIRST SECTION*/
+
+.first-section__container {
+	display: flex;
+	padding: 10% 10% 0 10%;
+}
+
+.first-section__img {
+	padding-right: 10%;
+}
+
+.first-section__img img {
+	height: 75%;
+}
+
+.first-section__title {
+	padding: 5% 0;
+}
+
+.first-section__par {
+	margin-bottom: 5%;
+	line-height: 1.5;
+}
+
+.first-section__scroll,
+.second-section__scroll {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*END OF FIRST SECTION*/
+
+/*SECOND SECTION*/
+
+.second-section__container {
+	background: url(../img/portfolio-bg.jpg) no-repeat;
+	padding-top: 10%;
+}
+
+.second-section__title {
+	text-align: center;
+}
+
+.second-section__gallery {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 5%;
+}
+
+.gallery__link {
+	width: 15%;
+	padding: 0 1% 5% 1%;
+}
+
+.gallery__img {
+	width: 100%;
+}
+
+/*END OF SECOND SECTION*/
+/*END OF CONTAIN*/
+
+/*FOOTER*/
+
+.footer__container {
+	padding: 10% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 0 5%;
+	border-bottom: 1px solid #bebebe;
+}
+
+.mail__title,
+.phone__title,
+.footer__social {
+	font-size: 30px;
+	text-align: center;
+	line-height: 2;
+}
+
+.mail__desc,
+.phone__desc {
+	font-size: 48px;
+	line-height: 2;
+}
+
+.footer__text-underline {
+	padding: 3% 0;
+	text-align: center;
+}
+
+/*END OF FOOTER*/
+
+/*MEDIA*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.gallery__link {
+		width: auto;
+		padding: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.first-section__img {
+		display: none;
+	}
+
+	.first-section__scroll {
+		padding-top: 5%;
+	}
+
+	.second-section__gallery {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo__img {
+		height: 30vh;
+	}
+	.logo__text {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 575px) {
+	.welcome__container {
+		height: 50vh;
+	}
+	
+	.nav__link {
+		font-size: 16px;
+	}
+
+	.logo__img {
+		height: 20vh;
+	}
+
+	.logo__text {
+		font-size: 30px;
+	}
+
+	.logo__tm {
+		font-size: 14px;
+	}
+
+	.first-section__container {
+		padding: 0;
+		text-align: center;
+	}
+
+	.second-section__gallery {
+		display: block;
+		padding: 0;
+		line-height: 0;
+	}
+
+	.gallery__link {
+		width: 100%;
+		padding: 0;
+	}
+
+	.scroll {
+		display: none;
+	}
+
+	.mail__title,
+	.mail__desc,
+	.phone__desc {
+		font-size: 30px;
+	}
+}
+
+/*END OF MEDIA*/
+
+
+
+

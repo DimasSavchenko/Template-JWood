@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('../fonts/Nexa_Free_Light-webfont.woff2') format('woff2'),
+         url('../fonts/Nexa_Free_Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url('../fonts/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+	
+    font-family: 'OpenSans';
+
+    src: url('OpenSans.eot');
+
+    src: url('OpenSans.eot?#iefix') format('embedded-opentype'),
+
+    	 url('OpenSans.woff2') format('woff2'),
+
+    	 url('OpenSans.woff') format('woff'),
+
+    	 url('OpenSans.ttf') format('truetype');
+	
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FeltTipWoman';
+    src: url('FeltTipWoman.eot');
+	
+    src: url('FeltTipWoman.eot?#iefix') format('embedded-opentype'),
+
+	 url('FeltTipWoman.woff2') format('woff2'),
+
+	 url('FeltTipWoman.woff') format('woff'),
+
+         url('FeltTipWoman.ttf') format('truetype');
+	
+    font-weight: normal;
+    font-style: normal;
+}
