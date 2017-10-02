@@ -54,10 +54,6 @@ p {
 	font-size: 60px;
 }
 
-.scroll {
-	padding-bottom: 2%;
-}
-
 .scroll__text {
 	font-size: 18px;
 	margin-bottom: 5%;	
@@ -79,6 +75,14 @@ p {
 }
 
 /*HEADER*/
+.header {
+	background: url(../img/welcome-bg.jpg) no-repeat;
+	background-size: cover;
+  background-position: center;
+	height: 100vh;
+	min-height: 400px;
+}
+
 .nav__container {
 	position: fixed;
 	width: 90%;
@@ -100,17 +104,15 @@ p {
 
 .nav__link:hover,
 .nav__link:focus {
-	background: #25453e;
+	background: linear-gradient(to bottom, #8f969c, #bcbfc6);
 }
 
-/*END OF HEADER*/
-
-/*CONTAIN*/
 /*WELCOME*/
 .welcome__container {
-	background: url(../img/welcome-bg.jpg) no-repeat;
-	height: 100vh;
-	min-height: 400px;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,7 +132,11 @@ p {
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 24px;
+	font-size: 1rem;
+}
+
+.logo__text {
+	position: relative;
 }
 
 .welcome__scroll {
@@ -138,15 +144,16 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	bottom: 0%;
-}
-
-.scroll:hover {
-	bottom: -0.5rem;
+	bottom: -3rem;
+	left: 0;
+	right: 0;
+	transition: .5s;
 }
 
 /*END OF WELCOME*/
+/*END OF HEADER*/
 
+/*CONTAIN*/
 /*FIRST SECTION*/
 
 .first-section__container {
@@ -205,6 +212,13 @@ p {
 
 .gallery__img {
 	width: 100%;
+	cursor: pointer;
+}
+
+.gallery__img:hover {
+	transform: scale(1.1,1.1);
+  transition-timing-function: ease-out;
+  transition-duration: .5s;	
 }
 
 /*END OF SECOND SECTION*/
